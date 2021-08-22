@@ -11,7 +11,7 @@ async function register(username,email,password,phone) {
         "method": "POST",
         "headers": {
             "content-type": "application/x-www-form-urlencoded",
-            "cookie": register_fingerprint.cookie + `_S_e_Ss_Io_N-__NlMmb=${session_id};`
+            "cookie": register_fingerprint.cookie + ` _S_e_Ss_Io_N-__NlMmb=${session_id}`
         },
         "body": qs.stringify({
             username: username,
@@ -39,7 +39,7 @@ function GenerateLoginFingerprint() {
     let md5_location=md5(location);
 
     return {
-        cookie : `_S_e_Ss_Io_N-__NlMmb=cen6tt9opccnt6uar2ro81bd99gcslrq; _se__SiO_n_gPsIn=${md5_location}; Us_E_R_Nam_e_GpsIN=${md5(md5_location+'1')}; Ss_eNNAS_GpsIN=${md5(md5_location+'2')}; GP_s_lL_GpsIN=${md5(md5_location+'3')}`,
+        cookie : `_S_e_Ss_Io_N-__NlMmb=cen6tt9opccnt6uar2ro81bd99gcslrq; _se__SiO_n_gPsIn=${md5_location}; Us_E_R_Nam_e_GpsIN=${md5(md5_location+'1')}; Ss_eNNAS_GpsIN=${md5(md5_location+'2')}; GP_s_lL_GpsIN=${md5(md5_location+'3')};`,
         latitude,longitude
     }
 }
