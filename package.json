@@ -1,0 +1,16 @@
+{
+  "name": "naelike-register",
+  "version": "1.0.0",
+  "description": "",
+  "main": "register.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "qs": "^6.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chelos",
+  "license": "MIT"
+}
